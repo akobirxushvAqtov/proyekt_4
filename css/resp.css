@@ -1,0 +1,43 @@
+.navMedia{
+    position: relative;
+    top: 100px;
+}
+.navMedia a{
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.navbar i.bx-menu{
+    margin-left: 20px;
+    font-size: 24px;
+    display: none;
+}
+.navMedia{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #2f363e;
+    top: 70px;
+    left: 0;
+    transition: .5s;
+    z-index: 10;
+    padding: 30px 20px;
+}
+
+.navMedia.active{
+    left: -110%;
+}
+
+@media (max-width: 576px) {
+    .navbar .resp .menyu a{
+        display: none;
+    }
+    .navbar i.bx-menu{
+        display: block;
+    }
+}
